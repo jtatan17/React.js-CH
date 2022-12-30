@@ -1,0 +1,44 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f48c06;
+    height: 100%;
+}
+
+.card {
+    margin: 0.5rem auto;
+    padding: 1rem 1rem;
+    border-style: solid;
+}
+
+.nav-menu {
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    height: 90px;
+    background-color: #ffba08;
+}
+
+
+.nav-link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.nav-link:hover {
+    font-weight: 600;
+    color: black;
+}
+
+.greeting {
+    background-color:#faa307;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
