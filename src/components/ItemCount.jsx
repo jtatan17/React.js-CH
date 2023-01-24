@@ -17,6 +17,3 @@ function Itemcounter () {
 
 
 export default Itemcounter
-
-
-//faMinus faPlus <FontAwesomeIcon className="fa-xl" icon={faCartShopping}/>

@@ -331,15 +331,15 @@ function getItems() {
   return new Promise((resolve,reject) => {
     setTimeout(()=>{
       resolve(products);
-    }, 3000)
+    }, 1000)
   });
 }
 
-export function getSingleItem() {
+export function getSingleItem(itemid) {
   return new Promise((resolve,reject) => {
     setTimeout(()=>{
-      resolve(products[0]);
-    }, 3000)
+      resolve(products[itemid-1]);
+    }, 1000)
   });
 }
 export default getItems;

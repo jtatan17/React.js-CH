@@ -2,11 +2,15 @@ import React, { useState, useEffect } from "react";
 import FlexWrapper from "../Flexwrapper";
 import Item from "../Item";
 import { getSingleItem } from "../../Data/products";
+import { useParams } from "react-router";
+
 
 function ItemDetailContainer() {
   const [product, setProdutcs] = useState([]);
+  let {itemid} = useParams();
+  console.log(itemid);
   useEffect(() => {
-    getSingleItem().then((resolve) => {
+    getSingleItem(itemid).then((resolve) => {
       console.log(resolve);
       setProdutcs(resolve);
     });

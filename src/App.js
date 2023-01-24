@@ -9,15 +9,17 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="mainConatiner">
-      <NavBar />
-      <Greeting text="Bienvenidos a Footlocker, la mejor tienda de tenis" />
+      
+      
       {/* <ItemListContainer/> */}
       {/* <ItemDetailContainer /> */}
 
       <BrowserRouter>
+      <NavBar />
+      <Greeting text="Bienvenidos a Footlocker, la mejor tienda de tenis" />
         <Routes>
           <Route path="/" element={<ItemListContainer/>}/>
-          <Route path="/detalle" element={<ItemDetailContainer />}/>
+          <Route path="/item/:itemid" element={<ItemDetailContainer />}/>
         </Routes>
       </BrowserRouter>
     </div>

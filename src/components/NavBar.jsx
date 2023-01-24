@@ -1,39 +1,31 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faCartShopping} from "@fortawesome/free-solid-svg-icons";
-import * as iconList from "@fortawesome/free-solid-svg-icons";
-
-// npm i @fortawesome/fontawesome-svg-core
-// npm i @fortawesome/free-solid-svg-icons
-// npm i @fortawesome/free-regular-svg-icons
-// npm i @fortawesome/react-fontawesome@latest
 import CartWidget from "./CartWidget"
+import { Link } from "react-router-dom";
 
 
 function NavBar () {
-    console.log(iconList);
     return (
         <nav>
-            <ul className="nav-menu">
-                <h2>
-                    <li>
-                        <a href="/">FootLocker</a>
-                    </li>
-                </h2>
-                {/* <li className="nav-item">
-                    <a className="nav-link">
+            {/* <li className="nav-item">
+                    <Link className="nav-link">
                         Basketball
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link">
+                    <Link className="nav-link">
                         Running
                     </a>  
                 </li> */}
+            <ul className="nav-menu">
+                <h2>
+                    <li>
+                        <Link to="/">FootLocker</Link>
+                    </li>
+                </h2>
                 <li className="nav-item" >
-                    <a className="nav-link" href="/detalle">
+                    <Link className="nav-link" to="/detalle">
                         Detalle
-                    </a>
+                    </Link>
                 </li> 
                 <CartWidget/>
             </ul>

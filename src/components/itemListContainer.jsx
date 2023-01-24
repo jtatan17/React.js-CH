@@ -7,7 +7,6 @@ function ItemListContainer() {
   const [products, setProdutcs] = useState([]);
   
   getItems().then((resolve) => {
-    console.log(resolve)
     setProdutcs(resolve)
   });
     return <>
@@ -15,6 +14,8 @@ function ItemListContainer() {
         <FlexWrapper>
           {products.map((item)=>(
             <Item
+            key={item.id}
+            id={item.id}
             title={item.title}
             price={item.price}
             imgurl={item.imgurl}
