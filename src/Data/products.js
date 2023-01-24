@@ -330,7 +330,15 @@ const products = [
 function getItems() {
   return new Promise((resolve,reject) => {
     setTimeout(()=>{
-      resolve(products)
+      resolve(products);
+    }, 3000)
+  });
+}
+
+export function getSingleItem() {
+  return new Promise((resolve,reject) => {
+    setTimeout(()=>{
+      resolve(products[0]);
     }, 3000)
   });
 }
