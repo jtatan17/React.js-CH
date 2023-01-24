@@ -20,7 +20,7 @@ function NavBar () {
                         <a href="/">FootLocker</a>
                     </li>
                 </h2>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                     <a className="nav-link">
                         Basketball
                     </a>
@@ -29,10 +29,10 @@ function NavBar () {
                     <a className="nav-link">
                         Running
                     </a>  
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link">
-                        Comfort
+                </li> */}
+                <li className="nav-item" >
+                    <a className="nav-link" href="/detalle">
+                        Detalle
                     </a>
                 </li> 
                 <CartWidget/>

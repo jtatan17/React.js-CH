@@ -16,7 +16,8 @@ function ItemDetailContainer() {
       <div className="itemConatiner">
         <FlexWrapper>
           <div className="card">
-            <h1>{product.title}</h1>
+            <h1>Detalle</h1>
+            <h5>{product.title}</h5>
             <img src={product.imgurl}></img>
             <p>{product.detail}</p>
           </div>
