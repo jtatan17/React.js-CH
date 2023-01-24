@@ -1,5 +1,17 @@
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faCartShopping} from "@fortawesome/free-solid-svg-icons";
+import * as iconList from "@fortawesome/free-solid-svg-icons";
+
+// npm i @fortawesome/fontawesome-svg-core
+// npm i @fortawesome/free-solid-svg-icons
+// npm i @fortawesome/free-regular-svg-icons
+// npm i @fortawesome/react-fontawesome@latest
+import CartWidget from "./CartWidget"
+
 
 function NavBar () {
+    console.log(iconList);
     return (
         <nav>
             <ul className="nav-menu">
@@ -22,11 +34,8 @@ function NavBar () {
                     <a className="nav-link">
                         Comfort
                     </a>
-                </li>
-
-                <span>
-                    🛒
-                </span>
+                </li> 
+                <CartWidget/>
             </ul>
         </nav>
     )

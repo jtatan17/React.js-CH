@@ -1,19 +1,23 @@
-// funtion NavItem (props) {
-//     return <h6>{props.text}</h6>
-// }
+
 import "./Item.css";
 import React from "react";
+import Itemcounter from "./ItemCount";
+import products from "../Data/products";
 
-function Item (props) {
+function Item ({title, price, imgurl, detail}) {
     return(
     <div className="card">
+
         <div>
-            <img width="180px" src={props.image} lat='imagen'></img>
+            <img width="180px" height="200px" src={imgurl} lat='imagen'></img>
         </div>
-        
-        <h3>{props.title}</h3>
-        <h4>${props.price}</h4>
-        <p>{props.detail}</p>
+        <h3>{title}</h3>
+        <h4>${price}</h4>
+        <p>{detail}</p>
+        <button >Detalles</button>
+        <div>
+            <Itemcounter/>
+        </div>
     </div>
     )
 }
