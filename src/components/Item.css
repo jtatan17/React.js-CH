@@ -64,3 +64,8 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+.card div {
+    display: flex;
+    justify-content: center;
+}
